@@ -224,6 +224,12 @@
   "when": "editorTextFocus && vim.mode == 'Normal'"
 },
 {
+  "key": "space c c",
+  "command": "editor.action.clipboardCopyAction",
+  "when": "editorTextFocus && vim.mode == 'Visual'"
+},
+
+{
   "key": "f5",
   "command": "workbench.action.debug.start",
   "when": "editorTextFocus && vim.mode == 'Normal'"
@@ -277,5 +283,16 @@
   "key": "ctrl-d",
   "command": "search.action.focusSearchList",
   "when": "searchViewletVisible"
+},
+{
+  "key": "space o",
+  "command": "editor.action.insertLineAfter",
+  "when": "editorTextFocus && vim.mode == 'Normal'"
+},
+{
+  "key": "space shift+o",
+  "command": "editor.action.insertLineBefore",
+  "when": "editorTextFocus && vim.mode == 'Normal'"
 }
-]                   
+
+]
