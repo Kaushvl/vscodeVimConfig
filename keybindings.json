@@ -293,6 +293,15 @@
   "key": "space shift+o",
   "command": "editor.action.insertLineBefore",
   "when": "editorTextFocus && vim.mode == 'Normal'"
-}
-
+},
+  {
+    "key": "ctrl+.",
+    "command": "extension.vim_insert",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "extension.vim_escape",
+    "when": "vim.mode == 'Insert'"
+  }
 ]
