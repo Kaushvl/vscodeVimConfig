@@ -59,7 +59,6 @@
     "command": "workbench.action.previousEditorInGroup",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   // Coding
   {
     "key": "shift-j",
@@ -131,7 +130,10 @@
     "command": "runCommands",
     "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)",
     "args": {
-      "commands": ["workbench.view.scm", "workbench.scm.focus"]
+      "commands": [
+        "workbench.view.scm",
+        "workbench.scm.focus"
+      ]
     }
   },
   {
@@ -139,7 +141,6 @@
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   // File Explorer
   {
     "key": "r",
@@ -204,96 +205,95 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
   },
   {
-  "key": "space w q",
-  "command": "workbench.action.closeAllEditors",
-  "when": "vim.mode == 'Normal' && editorTextFocus"
+    "key": "space w q",
+    "command": "workbench.action.closeAllEditors",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-  "key": "space c d",
-  "command": "editor.action.copyLinesDownAction",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "space c u",
-  "command": "editor.action.copyLinesUpAction",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "space c p",
-  "command": "editor.action.clipboardPasteAction",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "space c c",
-  "command": "editor.action.clipboardCopyAction",
-  "when": "editorTextFocus && vim.mode == 'Visual'"
-},
-
-{
-  "key": "f5",
-  "command": "workbench.action.debug.start",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "shift-f5",
-  "command": "workbench.action.debug.stop",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "f9",
-  "command": "editor.debug.action.toggleBreakpoint",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "f10",
-  "command": "workbench.action.debug.stepOver",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "f11",
-  "command": "workbench.action.debug.stepInto",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "ctrl-`",
-  "command": "workbench.action.terminal.toggleTerminal",
-  "when": "vim.mode == 'Normal'"
-},
-{
-  "key": "space t n",
-  "command": "workbench.action.terminal.new",
-  "when": "vim.mode == 'Normal'"
-},
-{
-  "key": "space t k",
-  "command": "workbench.action.terminal.kill",
-  "when": "vim.mode == 'Normal'"
-},
-{
-  "key": "space t f",
-  "command": "workbench.action.terminal.focus",
-  "when": "vim.mode == 'Normal'"
-},
-{
-  "key": "space z z",
-  "command": "workbench.action.toggleZenMode",
-  "when": "vim.mode == 'Normal'"
-},
-{
-  "key": "ctrl-d",
-  "command": "search.action.focusSearchList",
-  "when": "searchViewletVisible"
-},
-{
-  "key": "space o",
-  "command": "editor.action.insertLineAfter",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
-{
-  "key": "space shift+o",
-  "command": "editor.action.insertLineBefore",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
-},
+    "key": "space c d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space c u",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space c p",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space c c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "editorTextFocus && vim.mode == 'Visual'"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.debug.start",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift-f5",
+    "command": "workbench.action.debug.stop",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "f9",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "f10",
+    "command": "workbench.action.debug.stepOver",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "f11",
+    "command": "workbench.action.debug.stepInto",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl-`",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space t n",
+    "command": "workbench.action.terminal.new",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space t k",
+    "command": "workbench.action.terminal.kill",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space t f",
+    "command": "workbench.action.terminal.focus",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space z z",
+    "command": "workbench.action.toggleZenMode",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl-d",
+    "command": "search.action.focusSearchList",
+    "when": "searchViewletVisible"
+  },
+  {
+    "key": "space o",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space shift+o",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
   {
     "key": "ctrl+.",
     "command": "extension.vim_insert",
@@ -303,5 +303,42 @@
     "key": "ctrl+.",
     "command": "extension.vim_escape",
     "when": "vim.mode == 'Insert'"
-  }
+  },
+  {
+    "key": "space t u",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space t d",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "space t a", // Trigger to open file with terminal content
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.terminal.selectAll"
+        },
+        {
+          "command": "editor.action.clipboardCopyAction"
+        },
+        {
+          "command": "workbench.action.files.newUntitledFile"
+        },
+        {
+          "command": "editor.action.clipboardPasteAction"
+        }
+      ]
+    },
+    "when": "vim.mode == 'Normal' && terminalFocus"
+  },
+  {
+    "key": "space t a", // Trigger to delete the file
+    "command": "workbench.action.revertAndCloseActiveEditor",
+    "when": "vim.mode == 'Normal' && resourceScheme == 'untitled' && editorFocus"
+  }   
+  
 ]
