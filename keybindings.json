@@ -1,4 +1,5 @@
 // Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaults
 [
   // Navigation
   {
@@ -195,6 +196,11 @@
     }
   },
   {
+    "key": "space c o",
+    "command": "workbench.action.closeOtherEditors",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
     "key": "enter",
     "command": "explorer.openAndPassFocus",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceIsFolder && !inputFocus"
@@ -339,6 +345,11 @@
     "key": "space t a", // Trigger to delete the file
     "command": "workbench.action.revertAndCloseActiveEditor",
     "when": "vim.mode == 'Normal' && resourceScheme == 'untitled' && editorFocus"
-  }   
+  },
+  {
+    "key": "space a c",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  }
   
 ]
