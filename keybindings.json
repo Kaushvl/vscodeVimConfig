@@ -350,6 +350,10 @@
     "key": "space a c",
     "command": "workbench.action.toggleAuxiliaryBar",
     "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
+    "key": "space f p",
+    "command": "copyRelativeFilePath",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
   }
-  
 ]
