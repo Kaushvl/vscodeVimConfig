@@ -281,6 +281,11 @@
     "when": "vim.mode == 'Normal'"
   },
   {
+    "key": "space t h",
+    "command": "workbench.action.togglePanel",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
     "key": "space z z",
     "command": "workbench.action.toggleZenMode",
     "when": "vim.mode == 'Normal'"
