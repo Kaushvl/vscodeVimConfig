@@ -87,7 +87,7 @@
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
   {
-    "key": "space c s",
+    "key": "space f s",
     "command": "workbench.action.gotoSymbol",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
@@ -360,5 +360,5 @@
     "key": "space f p",
     "command": "copyRelativeFilePath",
     "when": "vim.mode == 'Normal' && editorTextFocus"
-  }
+  },
 ]
